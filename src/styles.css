@@ -1,0 +1,41 @@
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App .app-title {
+  font-size: 50px;
+}
+
+.App .app-timer {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+.App .buttons button {
+  background: grey;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  min-width: 100px;
+}
+
+.App .buttons button:last-child {
+  margin-right: 0;
+}
+
+.App .buttons button:hover {
+  background: lightgrey;
+}
