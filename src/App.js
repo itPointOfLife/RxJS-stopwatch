@@ -1,20 +1,7 @@
 import React from 'react';
-import styles from './styles.css';
-import { fromEvent, timer, of, interval, BehaviorSubject } from 'rxjs';
-import {
-  map,
-  bufferCount,
-  filter,
-  flatMapLatest,
-  mergeMap,
-  takeWhile,
-  debounce,
-  buffer,
-} from 'rxjs/operators';
-
-// let lastStoppedValue = 0;
-// const source = timer(0, 1000).pipe(map((v) => v + lastStoppedValue));
-// source.subscribe((data) => console.log(data));
+import './styles.css';
+import { fromEvent, timer, interval, BehaviorSubject } from 'rxjs';
+import { map, filter, mergeMap, takeWhile, debounce, buffer } from 'rxjs/operators';
 
 function App() {
   const stopStartBtn = React.useRef(null);
